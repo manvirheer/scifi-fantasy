@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+  <defs>
+    <pattern id="topo" x="0" y="0" width="600" height="600" patternUnits="userSpaceOnUse">
+      <g fill="none" stroke="#f6f3ea" stroke-opacity="0.12" stroke-width="0.7">
+        
+        <path d="M -50 320 C 80 280, 180 360, 280 300 S 480 240, 660 310"></path>
+        <path d="M -50 360 C 90 320, 200 400, 310 340 S 500 280, 660 350"></path>
+        <path d="M -50 400 C 100 360, 220 440, 340 380 S 520 320, 660 390"></path>
+        <path d="M -50 440 C 110 400, 240 480, 370 420 S 540 360, 660 430"></path>
+        <path d="M -50 480 C 120 440, 260 520, 400 460 S 560 400, 660 470"></path>
+        <path d="M -50 520 C 130 480, 280 560, 430 500 S 580 440, 660 510"></path>
+        
+        <path d="M -50 80  C 90 50,  220 130, 350 70  S 530 20,  660 90"></path>
+        <path d="M -50 120 C 100 90, 240 170, 370 110 S 550 60,  660 130"></path>
+        <path d="M -50 160 C 110 130,260 210, 390 150 S 570 100, 660 170"></path>
+        <path d="M -50 200 C 120 170,280 250, 410 190 S 590 140, 660 210"></path>
+        
+        <ellipse cx="280" cy="400" rx="40" ry="16"></ellipse>
+        <ellipse cx="280" cy="400" rx="68" ry="28"></ellipse>
+        <ellipse cx="280" cy="400" rx="100" ry="42"></ellipse>
+        
+        <ellipse cx="460" cy="180" rx="32" ry="14"></ellipse>
+        <ellipse cx="460" cy="180" rx="56" ry="24"></ellipse>
+        <ellipse cx="460" cy="180" rx="84" ry="36"></ellipse>
+      </g>
+      
+      <g fill="#f6f3ea" fill-opacity="0.22">
+        <circle cx="280" cy="400" r="1.2"></circle>
+        <circle cx="460" cy="180" r="1.2"></circle>
+        <circle cx="120" cy="540" r="0.8"></circle>
+        <circle cx="540" cy="540" r="0.8"></circle>
+      </g>
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#topo)"></rect>
+</svg>
