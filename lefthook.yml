@@ -1,0 +1,17 @@
+commit-msg:
+  commands:
+    conventional-commit:
+      run: |
+        msg=$(head -1 {1})
+        if ! echo "$msg" | grep -qE '^(feat|fix|docs|style|refactor|perf|test|build|ci|chore|revert)(\(.+\))?!?: .+'; then
+          echo ""
+          echo "  Bad commit message format."
+          echo ""
+          echo "  Expected: <type>[optional scope]: <description>"
+          echo ""
+          echo "  Types: feat fix docs style refactor perf test build ci chore revert"
+          echo ""
+          echo "  Got: $msg"
+          echo ""
+          exit 1
+        fi

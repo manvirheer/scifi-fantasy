@@ -1,0 +1,23 @@
+{
+  "name": "scifi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "image-slot.js",
+  "scripts": {
+    "prepare": "lefthook install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manvirheer/scifi-fantasy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manvirheer/scifi-fantasy/issues"
+  },
+  "homepage": "https://github.com/manvirheer/scifi-fantasy#readme",
+  "devDependencies": {
+    "lefthook": "^2.1.8"
+  }
+}
