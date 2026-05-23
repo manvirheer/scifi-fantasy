@@ -193,7 +193,7 @@ em, .it { font-style: italic; }
 [data-fontset="lithic"] h2,
 [data-fontset="lithic"] h3,
 [data-fontset="lithic"] h4 {
-  letter-spacing: -0.005em;     /* Cardo is wider than Cormorant — back off the tight tracking */
+  letter-spacing: -0.005em;     /* Cardo is wider than Cormorant - back off the tight tracking */
   line-height: 1.1;
 }
 /* hero h1: tall Cardo italic needs more leading than Cormorant did */
@@ -201,7 +201,7 @@ em, .it { font-style: italic; }
   letter-spacing: -0.015em;
   line-height: 1.02;
 }
-/* Forum caps are narrower than Cinzel — give them more breathing room */
+/* Forum caps are narrower than Cinzel - give them more breathing room */
 [data-fontset="lithic"] .brand-name,
 [data-fontset="lithic"] .nav-link,
 [data-fontset="lithic"] .crest,
@@ -232,7 +232,7 @@ em, .it { font-style: italic; }
 [data-fontset="lithic"] .event-card .e-tag {
   font-weight: 400;             /* Forum only has one weight; let the type breathe */
 }
-/* body paragraphs in sans inherit Karla — bump leading on long-form blocks */
+/* body paragraphs in sans inherit Karla - bump leading on long-form blocks */
 [data-fontset="lithic"] .review-card .body,
 [data-fontset="lithic"] .event-card .e-body,
 [data-fontset="lithic"] .mascot-panel .txt p,
@@ -242,7 +242,7 @@ em, .it { font-style: italic; }
 [data-fontset="lithic"] .page-head .lede {
   line-height: 1.65;
 }
-/* Cardo's italic is gentle — let big display italics sit a hair larger */
+/* Cardo's italic is gentle - let big display italics sit a hair larger */
 [data-fontset="lithic"] .hero h1 em,
 [data-fontset="lithic"] .hero h1 .magic {
   font-style: italic;
@@ -369,7 +369,7 @@ em, .it { font-style: italic; }
   background-size: 240px 240px;
 }
 
-/* parchment grain — very subtle, doesn't muddy the photo */
+/* parchment grain - very subtle, doesn't muddy the photo */
 [data-palette="scriptorium"] body::before {
   content: ""; position: fixed; inset: 0;
   z-index: 2; pointer-events: none;
@@ -398,7 +398,7 @@ em, .it { font-style: italic; }
 /* nav + content sit above vignette */
 [data-palette="scriptorium"] .shell { z-index: 4; }
 
-/* drop cap on key blurbs in scriptorium — no glow */
+/* drop cap on key blurbs in scriptorium - no glow */
 [data-palette="scriptorium"] .cr-syn::first-letter,
 [data-palette="scriptorium"] .hero-sub::first-letter {
   font-family: var(--font-caps);
@@ -421,7 +421,7 @@ em, .it { font-style: italic; }
     0 0 60px color-mix(in srgb, var(--gold) 8%, transparent);
 }
 
-/* solid card surfaces — sit on top of pattern */
+/* solid card surfaces - sit on top of pattern */
 [data-palette="scriptorium"] .review-card {
   background: color-mix(in srgb, var(--surface) 92%, transparent);
   backdrop-filter: blur(4px);
@@ -705,7 +705,7 @@ em, .it { font-style: italic; }
   box-shadow: 0 0 10px color-mix(in srgb, var(--accent) 70%, transparent);
 }
 
-/* hero italic gets ember instead of cosmic purple — no glow */
+/* hero italic gets ember instead of cosmic purple - no glow */
 [data-palette="scriptorium"] .hero h1 .magic { color: var(--accent-2); }
 [data-palette="scriptorium"] .hero h1 em { color: var(--gold); }
 
@@ -729,7 +729,7 @@ em, .it { font-style: italic; }
   box-shadow: 0 0 6px color-mix(in srgb, var(--gold) 30%, transparent);
 }
 
-/* cinematic banner — heavier veil for that candlelit-fresco look */
+/* cinematic banner - heavier veil for that candlelit-fresco look */
 [data-palette="scriptorium"] .cinematic-banner .veil {
   background:
     linear-gradient(180deg, color-mix(in srgb, var(--bg) 75%, transparent) 0%, color-mix(in srgb, var(--bg) 20%, transparent) 28%, color-mix(in srgb, var(--bg) 15%, transparent) 55%, color-mix(in srgb, var(--bg) 98%, transparent) 100%),
@@ -979,7 +979,7 @@ em, .it { font-style: italic; }
   .current-read .book-cover { max-width: 300px; margin: 0 auto; }
 }
 
-/* book cover — mystic leather tome (Harry Potter spellbook vibe) */
+/* book cover - mystic leather tome (Harry Potter spellbook vibe) */
 .book-cover {
   position: relative;
   aspect-ratio: 2 / 3;
@@ -1584,7 +1584,7 @@ em, .it { font-style: italic; }
   font-size: 16px; color: var(--ink-2); line-height: 1.55;
 }
 
-/* ─── image slots — match the cinematic surface ─── */
+/* ─── image slots - match the cinematic surface ─── */
 image-slot {
   display: block;
   background:
@@ -1602,7 +1602,7 @@ image-slot {
 }
 image-slot::part(empty) { color: var(--ink-mute); }
 image-slot::after {
-  /* corner crosshair ornament — only visible on empty */
+  /* corner crosshair ornament - only visible on empty */
   content: ""; position: absolute;
   inset: 14px; pointer-events: none;
   border: 1px dashed color-mix(in srgb, var(--gold) 30%, transparent);
@@ -1802,7 +1802,7 @@ image-slot[data-filled]::after { display: none; }
 }
 .world-tile:not([data-filled]) .caption .what { color: var(--ink-mute); }
 
-/* light-mode adjustments for image-slots — keep some warmth */
+/* light-mode adjustments for image-slots - keep some warmth */
 [data-theme="light"] image-slot {
   background:
     radial-gradient(60% 70% at 30% 20%, color-mix(in srgb, var(--accent) 8%, transparent), transparent 70%),

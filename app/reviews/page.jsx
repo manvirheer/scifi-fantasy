@@ -2,8 +2,7 @@
 
 import { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import Crest from '@/components/Crest';
-import ReviewCard from '@/components/ReviewCard';
+import { Crest, ReviewCard } from '@/components/ui';
 import { CLUB, REVIEWS } from '@/lib/data';
 import { variants, defaultTransition, stagger } from '@/lib/animations';
 
@@ -22,7 +21,7 @@ export default function ReviewsPage() {
         <Crest>Member reviews</Crest>
         <h1>What we thought.</h1>
         <p className="lede">
-          Reviews are written by members after a Book of the Month wraps. We post them unedited — we only ask you sign your name and avoid spoilers past page one without a warning.
+          Reviews are written by members after a Book of the Month wraps. We post them unedited - we only ask you sign your name and avoid spoilers past page one without a warning.
         </p>
         <div style={{ display: "flex", gap: 28, marginTop: 24, fontFamily: "var(--font-caps)", fontSize: 10.5, color: "var(--ink-mute)", letterSpacing: "0.18em", textTransform: "uppercase" }}>
           <span>average <strong style={{ color: "var(--gold)", marginLeft: 6, fontSize: 14, fontFamily: "var(--font-display)", fontStyle: "italic", letterSpacing: 0 }}>{avg} ★</strong></span>
@@ -67,7 +66,7 @@ export default function ReviewsPage() {
         <Crest subtle glyph="✧">Write one</Crest>
         <h3>Finished a book with us?</h3>
         <p>
-          Write a few honest paragraphs — we'll post them here unedited. Stars optional;
+          Write a few honest paragraphs - we'll post them here unedited. Stars optional;
           if you give them, be willing to defend the rating at the next meeting.
         </p>
         <a className="btn btn-accent" href={`mailto:${CLUB.email}?subject=Review submission`}

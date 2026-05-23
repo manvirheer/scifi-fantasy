@@ -2,8 +2,7 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import Crest from '@/components/Crest';
-import DividerRule from '@/components/DividerRule';
+import { Crest, DividerRule } from '@/components/ui';
 import { EVENTS } from '@/lib/data';
 import { variants, defaultTransition, stagger as staggerPreset } from '@/lib/animations';
 
@@ -79,7 +78,7 @@ export default function EventsPage() {
           <Crest subtle glyph="✧">Can't make it?</Crest>
           <h3 style={{ fontSize: 24 }}>Catch up on Discord</h3>
           <p>
-            One member writes up the discussion afterwards — it lands in
+            One member writes up the discussion afterwards - it lands in
             <code style={{ fontFamily: "var(--font-mono)", fontSize: 13, color: "var(--gold)", margin: "0 4px" }}>#announcements</code>
             a couple of days later.
           </p>

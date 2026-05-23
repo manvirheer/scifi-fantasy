@@ -1,5 +1,5 @@
 import { CLUB } from '@/lib/data';
-import Crest from './Crest';
+import { Crest } from './ui';
 
 export default function Footer() {
   return (

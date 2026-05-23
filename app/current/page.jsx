@@ -1,9 +1,5 @@
-import Crest from '@/components/Crest';
-import BookCover from '@/components/BookCover';
-import DiscordIcon from '@/components/DiscordIcon';
-import FadeIn from '@/components/FadeIn';
-import StaggerGroup from '@/components/StaggerGroup';
-import StaggerItem from '@/components/StaggerItem';
+import { Crest, BookCover, DiscordIcon } from '@/components/ui';
+import { FadeIn, StaggerGroup, StaggerItem } from '@/components/motion';
 import { CLUB, CURRENT_READ } from '@/lib/data';
 
 export default function CurrentPage() {

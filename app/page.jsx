@@ -1,14 +1,8 @@
 import Link from 'next/link';
-import Crest from '@/components/Crest';
-import DividerRule from '@/components/DividerRule';
-import BookCover from '@/components/BookCover';
-import ReviewCard from '@/components/ReviewCard';
+import { Crest, DividerRule, BookCover, ReviewCard, DiscordIcon } from '@/components/ui';
 import Orrery from '@/components/Orrery';
 import WorldsBoard from '@/components/WorldsBoard';
-import DiscordIcon from '@/components/DiscordIcon';
-import FadeIn from '@/components/FadeIn';
-import StaggerGroup from '@/components/StaggerGroup';
-import StaggerItem from '@/components/StaggerItem';
+import { FadeIn, StaggerGroup, StaggerItem } from '@/components/motion';
 import { CLUB, CURRENT_READ, PAST_READS, EVENTS, REVIEWS, FAQ, NEW_HERE_STEPS } from '@/lib/data';
 
 export default function HomePage() {
@@ -31,7 +25,7 @@ export default function HomePage() {
             <p className="hero-sub">
               SFU's book club for science fiction and fantasy. One book a month, discussed
               on the <strong>first Friday</strong> at 6pm in Halpern 126. Drop in even
-              if you haven't finished — most of us haven't either.
+              if you haven't finished - most of us haven't either.
             </p>
             <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginTop: 28 }}>
               <a className="btn btn-primary" href={CLUB.discord} target="_blank" rel="noopener noreferrer"
@@ -49,7 +43,7 @@ export default function HomePage() {
                 <h4>New here?</h4>
                 <p>
                   Drop in any month, take a seat, accept the snacks. You don't need to
-                  have finished — or even started — the book. We'd rather see you confused
+                  have finished - or even started - the book. We'd rather see you confused
                   than not at all.
                 </p>
               </div>

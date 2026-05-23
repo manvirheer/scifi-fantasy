@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { CLUB } from '@/lib/data';
-import DiscordIcon from './DiscordIcon';
+import { DiscordIcon } from './ui';
 
 export default function Nav({ dark, setDark }) {
   const pathname = usePathname();

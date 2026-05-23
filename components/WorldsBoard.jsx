@@ -2,7 +2,7 @@
 
 import dynamic from 'next/dynamic';
 import { WORLDS, IMG } from '@/lib/data';
-import Crest from './Crest';
+import { Crest } from './ui';
 
 function WorldsBoardInner() {
   return (
