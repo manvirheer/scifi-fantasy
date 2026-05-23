@@ -1864,6 +1864,12 @@ image-slot[data-filled]::after { display: none; }
   }
 }
 
+[data-theme="light"] .orrery {
+  color: #e0d0b0;
+  filter: invert(1) sepia(0.3);
+  opacity: 0.55;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .orrery [class*="orrery-"], .orrery .orrery-orbit { animation: none !important; }
 }
