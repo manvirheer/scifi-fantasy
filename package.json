@@ -1,9 +1,11 @@
 {
   "name": "scifi",
   "version": "1.0.0",
-  "description": "",
-  "main": "image-slot.js",
+  "description": "SFU Sci-Fi & Fantasy Book Club website",
   "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
     "prepare": "lefthook install"
   },
   "repository": {
@@ -19,5 +21,11 @@
   "homepage": "https://github.com/manvirheer/scifi-fantasy#readme",
   "devDependencies": {
     "lefthook": "^2.1.8"
+  },
+  "dependencies": {
+    "framer-motion": "^12.40.0",
+    "next": "^16.2.6",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   }
 }

@@ -336,36 +336,36 @@ em, .it { font-style: italic; }
 
 [data-palette="scriptorium"] body {
   background-color: var(--bg);
-  background-image: var(--backdrop-image, url("assets/library-pattern.svg"));
+  background-image: var(--backdrop-image, url("/assets/library-pattern.svg"));
   background-size: 480px 720px;
   background-position: center top;
   background-attachment: fixed;
   background-repeat: repeat;
 }
 [data-theme="light"][data-palette="scriptorium"] body {
-  background-image: url("assets/library-pattern-light.svg");
+  background-image: url("/assets/library-pattern-light.svg");
 }
 [data-palette="scriptorium"][data-backdrop="none"] body {
   background-image: none;
 }
 [data-palette="scriptorium"][data-backdrop="constellation"] body {
-  background-image: url("assets/backdrop-constellation.svg");
+  background-image: url("/assets/backdrop-constellation.svg");
   background-size: 600px 600px;
 }
 [data-palette="scriptorium"][data-backdrop="orbits"] body {
-  background-image: url("assets/backdrop-orbits.svg");
+  background-image: url("/assets/backdrop-orbits.svg");
   background-size: 900px 900px;
 }
 [data-palette="scriptorium"][data-backdrop="topo"] body {
-  background-image: url("assets/backdrop-topo.svg");
+  background-image: url("/assets/backdrop-topo.svg");
   background-size: 600px 600px;
 }
 [data-palette="scriptorium"][data-backdrop="rulings"] body {
-  background-image: url("assets/backdrop-rulings.svg");
+  background-image: url("/assets/backdrop-rulings.svg");
   background-size: 600px 240px;
 }
 [data-palette="scriptorium"][data-backdrop="damask"] body {
-  background-image: url("assets/backdrop-damask.svg");
+  background-image: url("/assets/backdrop-damask.svg");
   background-size: 240px 240px;
 }
 
@@ -1851,12 +1851,16 @@ image-slot[data-filled]::after { display: none; }
 
 @media (max-width: 900px) {
   .orrery {
-    position: relative;
-    width: 100%;
-    margin: 24px 0 0;
-    opacity: 0.7;
-    mask-image: none;
-    -webkit-mask-image: none;
+    width: 100vw;
+    right: calc(-1 * var(--pad-page, 16px));
+    top: -40px;
+    opacity: 0.35;
+  }
+  .hero {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 
