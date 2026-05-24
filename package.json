@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "prepare": "lefthook install"
+    "prepare": "lefthook install || true"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,9 @@
     "url": "https://github.com/manvirheer/scifi-fantasy/issues"
   },
   "homepage": "https://github.com/manvirheer/scifi-fantasy#readme",
+  "engines": {
+    "node": ">=18.18.0"
+  },
   "devDependencies": {
     "lefthook": "^2.1.8"
   },
